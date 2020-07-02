@@ -1,12 +1,8 @@
-# Original file Copyright CMU462 Fall 2015: 
-# Kayvon Fatahalian, Keenan Crane,
-# Sky Gao, Bryce Summers, Michael Choquette.
 cmake_minimum_required(VERSION 2.8)
 
 # Application source
 set(APPLICATION_SOURCE
-    
-    example_01.cpp
+    main.cpp
 )
 
 #-------------------------------------------------------------------------------
@@ -31,9 +27,9 @@ link_directories(
 #-------------------------------------------------------------------------------
 # Add executable
 #-------------------------------------------------------------------------------
-add_executable(as1 ${APPLICATION_SOURCE})
+add_executable(shader ${APPLICATION_SOURCE})
 
-target_link_libraries( as1
+target_link_libraries( shader
     glew ${GLEW_LIBRARIES}
     glfw ${GLFW_LIBRARIES}
     ${OPENGL_LIBRARIES}
@@ -45,7 +41,7 @@ target_link_libraries( as1
 # Platform-specific configurations for target
 #-------------------------------------------------------------------------------
 if(APPLE)
-  set_property( TARGET as1 APPEND_STRING PROPERTY COMPILE_FLAGS
+  set_property( TARGET shader APPEND_STRING PROPERTY COMPILE_FLAGS
                 "-Wno-deprecated-declarations -Wno-c++11-extensions")
 endif(APPLE)
 
@@ -53,4 +49,4 @@ endif(APPLE)
 set(EXECUTABLE_OUTPUT_PATH ..)
 
 # Install to project root
-install(TARGETS as1 DESTINATION ${Assignment1_SOURCE_DIR})
+install(TARGETS shader DESTINATION ${SimpleShader_SOURCE_DIR})

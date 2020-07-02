@@ -1,8 +1,5 @@
-# Original file Copyright CMU462 Fall 2015: 
-# Kayvon Fatahalian, Keenan Crane,
-# Sky Gao, Bryce Summers, Michael Choquette.
 cmake_minimum_required(VERSION 2.8)
-project(Assignment1)
+project(SimpleShader)
 
 #-------------------------------------------------------------------------------
 # Build options
@@ -146,4 +143,4 @@ add_subdirectory(src)
 #endif()
 
 # Install settings
-set(CMAKE_INSTALL_PREFIX "${Assignment1_SOURCE_DIR}/")
+set(CMAKE_INSTALL_PREFIX "${SimpleShader_SOURCE_DIR}/")

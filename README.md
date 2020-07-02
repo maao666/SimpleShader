@@ -1,18 +1,21 @@
-# CS 184 Fall 2016
-Instructor: James O'Brien
+# Simple Shader
 
-# USAGE
-1. ‘cd’ into your assignment directory, type into the Terminal the following step by step
-2. mkdir build
-3. cd build
-4. cmake ..
-5. make
+## USAGE
 
-# Keyboard features
-1. 'ESC': Exit
-2. 'Q': Exit
-3. 'F': Full screen
-4. '↓': Translate objects down
-5. '↑': Translate objects up
-6. '←': Translate objects left
-7. '→': Translate objects right
+```shell
+mkdir build
+cd build
+cmake ..
+make
+./shader
+```
+
+## Keyboard features
+
+- 'ESC': Exit
+- 'Q': Exit
+- 'F': Full screen
+- '↓': Translate objects down
+- '↑': Translate objects up
+- '←': Translate objects left
+- '→': Translate objects right
